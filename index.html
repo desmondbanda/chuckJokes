@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokes</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-900 text-lime-500 flex flex-col items-center justify-center p-4">
+        <h1 class="text-3xl font-bold mb-4 text-center">Chuck Norris API Jokes</h1>
+        <h2 class="text-xl mb-6 text-center">Press "Load More" to load another joke</h2>
+        <div id="jokeContainer">
+            <div id="joke" class="text-center text-xl mb-4 p-4 bg-gray-800 rounded-lg shadow-md hidden">
+                <!-- Joke will be inserted here -->
+            </div>
+        </div>
+
+        <div class="chuckImageContainer">
+            <img src="chuck.jpg">
+        </div>
+       <!--
+        <div class="NorrisImage mb-6">
+            <img class="w-64 h-64 object-cover rounded-full border-4 border-lime-500" src="chuck.jpg" alt="Chuck Norris">
+        </div>
+    --> 
+     <button id="loadBtn" class="text-gray-900 px-4 py-2 rounded-full bg-lime-600 hover:text-white transition duration-300">Load More</button>
+    </div>
+
+</body>
+
+<script src="javascriptFile.js"></script>
+</html>
